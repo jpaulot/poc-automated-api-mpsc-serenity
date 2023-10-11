@@ -1,0 +1,12 @@
+com\mpsc\base\context\controll\PostApi.class
+com\mpsc\base\context\util\DateHelper.class
+com\mpsc\base\steps\definitionSteps\DefinitionStepsGet.class
+com\mpsc\base\context\Context.class
+com\mpsc\base\context\controll\PutApi.class
+com\mpsc\base\context\controll\Endpoints.class
+com\mpsc\base\steps\ProdutoSteps.class
+com\mpsc\base\steps\definitionSteps\DefinitionStepsDelete.class
+com\mpsc\base\context\controll\DeleteApi.class
+com\mpsc\base\run\RunTest.class
+com\mpsc\base\context\controll\GetApi.class
+com\mpsc\base\steps\definitionSteps\DefinitionStepsPost.class

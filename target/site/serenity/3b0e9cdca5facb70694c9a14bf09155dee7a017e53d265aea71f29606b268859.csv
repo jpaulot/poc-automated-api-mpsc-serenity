@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Manter Produtos","Cadastrar novo Produto","SUCCESS","2023-10-11T15:50:19.859-03:00[America/Sao_Paulo]","0.0","1.91"
+"Manter Produtos","Alterar Produto","SUCCESS","2023-10-11T15:50:21.801-03:00[America/Sao_Paulo]","0.0","0.09"
+"Manter Produtos","Pesquisar produto por ID","SUCCESS","2023-10-11T15:50:21.914-03:00[America/Sao_Paulo]","0.0","0.07"
+"Manter Produtos","Excluir produto por ID (Cenário com falha)","FAILURE","2023-10-11T15:50:22.017-03:00[America/Sao_Paulo]","0.0","0.17"
+"Manter Produtos","Listar Todos os Produtos","SUCCESS","2023-10-11T15:50:22.307-03:00[America/Sao_Paulo]","0.0","0.08"
