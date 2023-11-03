@@ -23,7 +23,7 @@ Funcionalidade: Manter Produtos
     Entao o GET devera retornar o status 200
 
   Cenario: Excluir produto por ID (Cenário com falha)
-    Dado que envio uma requisição DELETE para o endpoint "/api/Products/4"
+    Dado que envio uma requisição DELETE para o endpoint "/api/Products/2"
     Entao o DELETE devera retornar o status 200
 
   Cenario: Listar Todos os Produtos
