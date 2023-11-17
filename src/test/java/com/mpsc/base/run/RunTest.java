@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {
         "src/test/resources/features"
-}, tags="@mpsc and not @wip", glue = {"com.mpsc.base.steps.definitionSteps"}, dryRun = false)
+}, tags="@mpsc and not @wip", glue = {"com.mpsc.base"}, dryRun = false)
 
 public class RunTest {
 
