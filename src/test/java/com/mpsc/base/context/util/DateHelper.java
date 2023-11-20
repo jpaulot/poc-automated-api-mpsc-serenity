@@ -7,32 +7,12 @@ import java.time.format.DateTimeFormatter;
 public class DateHelper {
 	
 	public static LocalTime timeNow;
-	public static String unidade;
-	public static String atendimento;
 	public static boolean timeStart = false;
 	private static long aguardar;
-
-	public static String getUnidade() {
-		return unidade;
-	}
-
-	public static void setUnidade(String unidade) {
-		DateHelper.unidade = unidade;
-	}
-
-	public static String getAtendimento() {
-		return atendimento;
-	}
-
-	public static void setAtendimento(String atendimento) {
-		DateHelper.atendimento = atendimento;
-	}
 
 	public static LocalDate getDateNow() {
 
 		LocalDate now = LocalDate.now();
-
-
 
 		return now;
 	}
@@ -73,29 +53,12 @@ public class DateHelper {
 		return time.format(DateTimeFormatter.ofPattern("HH:mm"));
 	}
 
-	/**
-	 * wait time
-	 *
-	 * @author weslley.oliveira
-	 * @since 09/11/2018
-	 *
-	 * @param time
-	 * @return
-	 */
 	public static boolean waitTime(long time, long currentTime){
 		aguardar = currentTime + time;
 
 		return System.currentTimeMillis() < aguardar;
 	}
 
-	/**
-	 * wait thread sleep
-	 *
-	 * @author weslley.oliveira
-	 * @since 09/11/2018
-	 *
-	 * @param time
-	 */
 	public static void waitThread(long time){
 		try {
 			Thread.sleep(time);
