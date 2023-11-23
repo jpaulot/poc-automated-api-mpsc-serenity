@@ -1,6 +1,6 @@
 # language: pt
 # enconding: utf-8
-@mpsc
+@template
 Funcionalidade: Manter Produtos
 
   Cenario: Cadastrar novo Produto
@@ -24,7 +24,7 @@ Funcionalidade: Manter Produtos
 
   Cenario: Excluir produto por ID (Cenário com falha)
     Dado que envio uma requisição "DELETE" para o endpoint "/api/Products/2"
-    Entao devera retornar o status 200
+    Entao devera retornar o status 400
 
   Cenario: Listar Todos os Produtos
     Dado que envio uma requisição "GET" para o endpoint "/api/Products"

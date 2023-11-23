@@ -2,18 +2,22 @@ package com.mpsc.base.context;
 
 import io.restassured.response.Response;
 
-public class Context {
+import java.util.HashMap;
+
+public class DataBase {
 
     private static Response response;
     private static int statusCode;
     private static String codeAuthorization;
+    private static HashMap<String, String> body;
+
 
     public static Response getResponse() {
         return response;
     }
 
     public static void setResponse(Response response) {
-        Context.response = response;
+        DataBase.response = response;
     }
 
     public static int getStatusCode() {
@@ -21,7 +25,7 @@ public class Context {
     }
 
     public static void setStatusCode(int statusCode) {
-        Context.statusCode = statusCode;
+        DataBase.statusCode = statusCode;
     }
 
     public static String getCodeAuthorization() {
@@ -29,6 +33,14 @@ public class Context {
     }
 
     public static void setCodeAuthorization(String codeAuthorization) {
-        Context.codeAuthorization = codeAuthorization;
+        DataBase.codeAuthorization = codeAuthorization;
+    }
+
+    public static HashMap<String, String> getBody() {
+        return body;
+    }
+
+    public static void setBody(HashMap<String, String> body) {
+        DataBase.body = body;
     }
 }
