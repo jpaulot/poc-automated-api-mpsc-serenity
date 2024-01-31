@@ -29,7 +29,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest # For Linux, use ubuntu-latest
+    runs-on: windows-latest
     environment: dev
     steps:
     - name: 'Checkout GitHub Action'
@@ -45,13 +45,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: ${{ env.JAVA_VERSION }}
-
-    - name: 'Restore Project Dependencies Using Mvn'
-      shell: pwsh # For Linux, use bash
-      run: |
-        pushd './${{ env.POM_XML_DIRECTORY }}'
-        mvn clean package
-        popd
 
     - name: 'Executa os testes'
       shell: pwsh # For Linux, use bash
