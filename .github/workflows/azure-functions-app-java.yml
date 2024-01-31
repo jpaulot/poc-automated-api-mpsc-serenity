@@ -53,6 +53,12 @@ jobs:
         mvn clean package
         popd
 
+    - name: 'Executa os testes'
+      shell: pwsh # For Linux, use bash
+      run: |
+        pushd './${{ env.POM_XML_DIRECTORY }}'
+        mvn clean verify      
+
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
       id: fa
